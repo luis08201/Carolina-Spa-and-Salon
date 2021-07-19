@@ -1,0 +1,18 @@
+
+/*********************FOOTER**************************/
+.main__footer{
+  width:100%;
+  padding:0 32px;
+}
+.submain__footer{
+  margin:0 auto;
+  max-width:1100px;
+  border-top: 2px solid #97979749;
+}
+.footer__paragraph{
+  font-size: 12.8px;
+  font-family: var(--fuente3);
+  margin:16px 0;
+  text-align: center;
+  color:#212529;
+}

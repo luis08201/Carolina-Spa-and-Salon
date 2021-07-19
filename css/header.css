@@ -1,0 +1,133 @@
+.main__header {
+  padding: 5px 0;
+  background-color: var(--colorverde);
+}
+.subheader {
+  max-width: 1150px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 100%;
+  height: 190px;
+}
+/* SE REUSARA ESTE CODIGO. */
+.socialnetwork__link {
+  text-decoration: none;
+  color: var(--colorrosado);
+  font-size: 30px;
+  display: inline-block;
+  padding: 0 8px;
+}
+.header__nav {
+  width: 100%;
+  padding: 8px 0;
+  border-top: 1px dashed var(--colorblanco);
+  border-bottom: 1px dashed var(--colorblanco);
+}
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 100%;
+}
+.navlinks {
+  list-style: none;
+  background-color: var(--colorverde);
+  text-align: center;
+  flex-grow: 1;
+}
+.navlink {
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  font-size: 22.4px;
+  font-family: var(--fuente4);
+  color: var(--colorblanco);
+  transition: 640ms ease-in;
+}
+.navlink:hover {
+  background-color: var(--colorverde4);
+  color: var(--colorblack);
+}
+.toggle__menu {
+  display: none;
+}
+.header__link {
+  display: none;
+}
+/************************MEDIA QUERIES*************************/
+@media screen and (max-width: 769px) {
+  #navbar__menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subheader {
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-bottom: 36px;
+  }
+  .header__socialnetwork {
+    margin-bottom: 4px;
+  }
+  .menu__link {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: var(--colorfondo);
+    color: var(--colorblack);
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+  }
+  .toggle__menu {
+    display: block;
+    width: 49%;
+  }
+  .header__link {
+    display: block;
+    width: 49%;
+    text-align: right;
+  }
+  /*MENU*/
+  .navbar {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+  #navbar__menu {
+    display: none;
+  }
+  .header__nav__link {
+    text-decoration: none;
+    color: var(--colorblanco);
+    font-family: var(--fuente3);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+  }
+}
+@media screen and (max-width: 575px) {
+  /*MENU*/
+  .navbar {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+  .navbar__menu {
+    flex-direction: column;
+  }
+  .navlink {
+    width: 100%;
+  }
+}
